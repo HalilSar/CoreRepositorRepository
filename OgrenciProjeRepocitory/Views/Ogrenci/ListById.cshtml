@@ -1,0 +1,13 @@
+﻿@model OgrenciProjeRepocitory.Models.View.OgrenciModel
+@{
+    ViewData["Title"] = "ListById";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>ListById</h1>
+@foreach (var item in Model.olist)
+{
+    <p>@item.Ad</p>
+    <p>@item.Soyad</p>
+}
+
